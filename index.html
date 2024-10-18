@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <h3>Задание 1</h3>
+    <p>Создать html-страницу с трекбаром. 
+    Предоставить пользователю возможность 
+    изменять положение синего указателя.</p>
+    <input type="range" id="slider" min="0" max="100" value="50">
+    <div id="slider-value">50</div>
+
+    <h3>Задание 2</h3>
+    <p>Создать html-страницу с блоками информации, 
+        которые открываются по щелчку на заголовок. 
+        В один момент времени может быть развернут 
+        только один блок информации.</p>
+        <div class="block">
+            <h3 class="header">Блок 1</h3>
+            <div class="content">
+                Содержание блока 1
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="header">Блок 2</h3>
+            <div class="content">
+                Содержание блока 2
+            </div>
+        </div>
+        <div class="block">
+            <h3 class="header">Блок 3</h3>
+            <div class="content">
+                Содержание блока 3
+            </div>
+        </div>
+
+        <h3>Задание 3</h3>
+        <p>
+            Реализовать html-страницу с блоком вкладок. 
+            Сверху блока отображаются заголовки вкладок. 
+            При клике на заголовок в нижнем блоке 
+            отображается содержимое выбранной вкладки. 
+            Также необходимо выделять заголовок, содержимое 
+            которого отображается в текущий момент. 
+            При открытии страницы по умолчанию должен 
+            быть выделен первый заголовок и отображаться 
+            содержимое первой вкладки.
+        </p>
+        <div class="tabs">
+            <div class="tab" data-content="mango-content">Mango</div>
+            <div class="tab" data-content="orange-content">Orange</div>
+            <div class="tab" data-content="pineapple-content">Pineapple</div>
+            <div class="tab" data-content="papaya-content">Papaya</div>
+            <div class="tab" data-content="grapefruit-content">Grapefruit</div>
+            <div class="tab" data-content="pear-content">Pear</div>
+        </div>
+        
+        <div class="tab-contents">
+            <div class="tab-content" id="mango-content">
+                <div class="picture">
+                    <img src="./img/360852513_11436578.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Mango</h4>
+                    <p class="description">Mango is a tropical stone fruit 
+                    from the genus Mangifera. Known for its sweet, juicy flesh 
+                    and vibrant color, it is widely cultivated in warm climates. 
+                    Mangoes have a unique flavor profile that ranges from sweet to 
+                    slightly tart, depending on the variety.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="orange-content">
+                <div class="picture">
+                    <img src="./img/orange-white-white.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Orange</h4>
+                    <p class="description">An orange is a citrus fruit known for its 
+                    bright color and sweet-tart flavor. It is rich in vitamin C, fiber, 
+                    and antioxidants. Oranges are commonly eaten fresh, juiced, or used 
+                    in cooking and baking. They belong to the species Citrus sinensis and 
+                    are popular worldwide for their refreshing taste and health benefits.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="pineapple-content">
+                <div class="picture">
+                    <img src="./img/151184490_10484345.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Pineapple</h4>
+                    <p class="description">
+                    Pineapple is a tropical fruit known for its 
+                    sweet and tangy flavor. It has a rough, spiky 
+                    exterior and a juicy, fibrous interior. Pineapples 
+                    are rich in vitamins, particularly vitamin C and manganese, 
+                    and contain bromelain, an enzyme that may aid digestion.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="papaya-content">
+                <div class="picture">
+                    <img src="./img/halved-papaya-fruit-yellow-background.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Papaya</h4>
+                    <p class="description">Papaya is a tropical fruit 
+                    known for its sweet flavor and vibrant orange-yellow 
+                    flesh. It has a soft texture and is typically oval or 
+                    pear-shaped. Rich in vitamins A and C, papayas are also 
+                    a good source of dietary fiber and antioxidants.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="grapefruit-content">
+                <div class="picture">
+                    <img src="./img/fresh-juicy-grapefruit-slices-wooden.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Grapefruit</h4>
+                    <p class="description">Grapefruit is a citrus fruit 
+                    known for its large size and distinctive tart flavor. 
+                    It is a hybrid of the pomelo and the orange, typically 
+                    characterized by its pink or red flesh, although yellow 
+                    varieties also exist.</p>
+                </div>
+            </div>
+            <div class="tab-content" id="pear-content">
+                <div class="picture">
+                    <img src="./img/top-view-half-pear-with-shadow.png" width="250px">
+                </div>
+                <div class="text">
+                    <h4>Pear</h4>
+                    <p class="description">A pear is a sweet, juicy fruit 
+                    that is typically bell-shaped and comes in various colors, 
+                    including green, yellow, and red. Pears belong to the genus 
+                    Pyrus and are known for their smooth 
+                    skin and soft, grainy texture.</p>
+                </div>
+            </div>
+        </div>
+        
+        <h3>Задание 4</h3>
+        <p>Реализовать html-страницу, с формой заполнения информации о банковской карте. 
+            Страница должна иметь два блока (блок с формами ввода и блок, визуализирующий карту). При вводе данных в формы вода информация должна передаваться в блок визуализации карты. Оформление выполнить как в примере приведенном ниже.
+        </p>
+        <div class="main-container">
+            <div class="form-container">
+                <h2 class="form-title">Введите информацию о карте</h2>
+                <form id="card-form">
+                    <label for="card-number">Card Number:</label>
+                    <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+            
+                    <label for="card-name">Card Name:</label>
+                    <input type="text" id="card-name" placeholder="Иван Иванов" required>
+            
+                    <label for="expiry-date">Expiration Date:</label>
+                    <input type="text" id="expiry-date" placeholder="MM/YY" required>
+            
+                    <button type="submit" class="btn">Subnit</button>
+                </form>
+            </div>
+            
+            <div class="card-visual">
+                <div class="number">**** **** **** ****</div>
+                <div class="name">Имя Фамилия</div>
+                <div class="expiry">MM/YY</div>
+            </div>
+            
+        </div>
+        
+        
+       <style>
+        .card-visual::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right, #888, #ccc, #888);
+}
+
+    .number::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.2), rgba(0,0,0,0.2));
+}
+       </style>
+        
+    <script src="./main.js"></script>
+</body>
+</html>
